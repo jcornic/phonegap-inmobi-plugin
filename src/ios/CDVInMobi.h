@@ -12,7 +12,7 @@
 #import "IMInterstitial.h"
 #import "IMInterstitialDelegate.h"
 
-@interface CDVInMobi : CDVPlugin
+@interface CDVInMobi : CDVPlugin <IMInterstitialDelegate>
 - (void)showAd:(CDVInvokedUrlCommand*)command;
 @property (nonatomic, strong) IMInterstitial *adInterstitial;
 @end
